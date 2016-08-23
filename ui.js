@@ -4,10 +4,14 @@ function printNumber(number) {
   placeholder.innerHTML = number;
 }
 
+
 var button = document.getElementById("button");
 
+
 button.onclick = function() {
+  
   //uses the object created in the dice.js file
-  var result = dice6.roll();
+  dice = createDiceObject();
+  var result = dice.roll();
   printNumber(result);
 };
