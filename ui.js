@@ -7,11 +7,8 @@ function printNumber(number) {
 
 var button = document.getElementById("button");
 
-
 button.onclick = function() {
-  
-  //uses the object created in the dice.js file
-  dice = createDiceObject();
+  //calls roll method on the dice object created in the dice.js file
   var result = dice.roll();
   printNumber(result);
 };
